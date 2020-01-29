@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Nav from "./components/Nav";
 
+import Admin from "./pages/Admin";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/products" component={Products} />
           <Route exact path="/cart" component={Cart} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/admin" component={Admin} />
           <Route component={NoMatch} />
         </Switch>
       </div>
