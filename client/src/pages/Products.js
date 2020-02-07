@@ -3,15 +3,7 @@ import API from "../utils/API";
 
 class Products extends Component {
   state = {
-    products: [
-      {
-        name: "Tester",
-        type: "Beer",
-        description:
-          "Its beer what did you expect?",
-        price: 12
-      }
-    ]
+    products: []
   };
 
   componentDidMount() {
@@ -21,6 +13,7 @@ class Products extends Component {
   loadItems = () => {
     API.getItems()
     .then(res => 
+      // console.log(res.data)
       this.setState({ products: res.data })
       )
     .then(console.log(this.state))
@@ -35,7 +28,7 @@ class Products extends Component {
             <p>{product.name}</p>
             <p>{product.type}</p>
             <p>{product.description}</p>
-            <p>{product.price}</p>
+            <p>${product.price}</p>
           </>
         ))
       )
