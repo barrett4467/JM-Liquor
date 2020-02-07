@@ -16,18 +16,18 @@ class Carousel extends Component {
             max-width: 100%,
             height: 50px
         `
-        const Button = styled.a`
-            position: relative,
-            border: 1px solid black,
-            top: -10px
-        `
+        // const Button = styled.a`
+        //     position: relative,
+        //     border: 1px solid black,
+        //     top: -10px
+        // `
         const handleClick = page => {
             window.location.href="/" + page
         }
         return(
             <Slider { ...settings } style={{position: "absolute"}}>
                 <SliderComp>
-                    <img src="https://via.placeholder.com/300"/>
+                    <img src="https://via.placeholder.com/300" alt="placeholder1"/>
                     <button onClick={()=>handleClick("products")}>View Products</button>
                 </SliderComp>
                 <div>

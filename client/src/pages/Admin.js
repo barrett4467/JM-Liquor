@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 class Admin extends Component {
     render(){
-        this.state = {
+        this.setState({
             loggedIn: false
-        }
+        });
         if (this.state.loggedIn){
             return (
                 <p>
