@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
-
 class MapContainer extends Component {
     render() {
         const mapStyles= {
             width: "400px",
             height: "400px"
         }
+        
         return(
             <h1>Map here</h1>
             // <Map

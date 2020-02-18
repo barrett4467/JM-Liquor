@@ -10,6 +10,9 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import NoMatch from "./pages/NoMatch";
 
+console.log(process.env);
+
+  console.log(process.env.REACT_APP_API_KEY);
 function App() {
   return (
     <Router>
